@@ -1,0 +1,68 @@
+.pdf-card {
+    display: flex;
+    align-items: center;
+
+    gap: 18px;
+
+    padding: 20px 24px;
+    margin: 15px 0;
+
+    background-color: white;
+
+    color: #1e293b;
+    text-decoration: none;
+
+    border: 1px solid #dbe3ec;
+    border-radius: 14px;
+
+    box-shadow:
+        0 3px 10px
+        rgba(0, 0, 0, 0.06);
+
+    transition:
+        transform 0.2s,
+        box-shadow 0.2s,
+        border-color 0.2s;
+}
+
+/* マウスを乗せたとき */
+.pdf-card:hover {
+    transform: translateY(-4px);
+
+    border-color: #3b82f6;
+
+    box-shadow:
+        0 10px 25px
+        rgba(0, 0, 0, 0.12);
+}
+
+/* PDFのアイコン */
+.pdf-icon {
+    font-size: 32px;
+}
+
+/* タイトル */
+.pdf-card strong {
+    font-size: 18px;
+}
+
+/* 「PDFを開く」 */
+.pdf-card small {
+    color: #64748b;
+}
+
+/* 右側の矢印 */
+.arrow {
+    margin-left: auto;
+
+    font-size: 25px;
+
+    color: #3b82f6;
+
+    transition: transform 0.2s;
+}
+
+/* マウスを乗せると矢印が右へ動く */
+.pdf-card:hover .arrow {
+    transform: translateX(6px);
+}
